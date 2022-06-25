@@ -5,10 +5,10 @@ const userRoute = require('./routes/userRoute');
 
 mongoose.set('runValidators', true);
 try {
-  mongoose.connect('mongodb://localhost:27017/login', {
+  mongoose.connect(process.env.MONGO_URI, {
     auth: {
-      username: 'zul',
-      password: 'zul',
+      username: process.env.USERNAME,
+      password: process.env.PASSWORD,
     },
     authSource: 'admin',
     useNewUrlParser: true,
