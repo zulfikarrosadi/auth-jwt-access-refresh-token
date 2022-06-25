@@ -6,6 +6,19 @@ Everytime the login or register flow is success, it will produce `req.user` obje
 This object is used to protecting some routes, and it containing `userId` and `sessionId`
 and encoded with jwt
 
+## Config
+Create `.env` file
+```
+PORT=
+
+ACCESS_TOKEN_SECRET
+REFRESH_TOKEN_SECRET=
+
+MONGO_URI=mongodb://localhost:27017/login
+MONGO_USERNAME=
+MONGO_PASSWORD=
+```
+
 ## Endpoint
 - `POST http://localhost:3000/login` to login
   - request body
