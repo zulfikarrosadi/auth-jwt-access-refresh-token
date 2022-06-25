@@ -1,9 +1,9 @@
 # auth-jwt-access-refresh-token
 
-created token based authentication system using jwt and access and refresh token mechaninsm
+Token based authentication system using jwt and access and refresh token mechaninsm
 
-everytime the login or register flow is success, it will produce `req.user` object
-this object is used to protecting some routes, and it containing `userId` and `sessionId`
+Everytime the login or register flow is success, it will produce `req.user` object.
+This object is used to protecting some routes, and it containing `userId` and `sessionId`
 and encoded with jwt
 
 ## Endpoint
