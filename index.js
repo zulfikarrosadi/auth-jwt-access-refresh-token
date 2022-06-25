@@ -1,7 +1,7 @@
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const mongoose = require('mongoose');
-const userRoute = require('./routes/userRoute');
+const userRoute = require('./src/routes/userRoute');
 
 mongoose.set('runValidators', true);
 try {
