@@ -15,7 +15,7 @@ router.use(deserializeUser);
 router.post('/login', userLogin);
 router.post('/register', userRegister);
 router.post('/logout', logOut);
-router.get('/', requiredLogin, getAllUser);
+router.get('/users', requiredLogin, getAllUser);
 router.get('/test', requiredLogin, getAllUser);
 
 module.exports = router;
