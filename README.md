@@ -63,7 +63,7 @@ and encoded with jwt
           }
         ```
 
-- `GET http://localhost:3000/users` to get all users PROTECTED ROUTE
+- `GET http://localhost:3000/users` to get all users **protected route**
   - response
     - success
       - status code: 201
